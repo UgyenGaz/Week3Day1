@@ -1,0 +1,65 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
+st.title( "Adult income")
+df=pd.read_csv('/Users/UgyenGazom/Deskt
+st.write(df)
+st.header('age distribution')
+arr1= df [ 'age' ]
+fig1, ax=plt.subplots()
+ax.hist(arr1, bins=40)
+st.pyplot(fig1)
+st. header ('WorkClass Distribution')
+arredf (' workclass']
+fig, ax= plt. subplots()
+ax.hist(arr, bins=30)
+st.pyplot(fig)
+st.header ( 'Hour/week Histrogram')
+arr2=df [' hours-per-week']
+fig2, ax= plt.subplots()
+ax.hist(arr2, bins=30)
+st.pyplot(fig2)
+
+st.header( 'fnlwgt Distribution'
+arr3=df [' fnlwgt']
+fig3, ax= plt.subplots()
+ax.hist(arr3, bins=30)
+st. pyplot (fig3)
+st.header ('Capital Gains Distribution')
+arr4=df [' capital-gain']
+fig4, ax= plt. subplots()
+ax.hist(arr4, bins=30)
+st. pyplot (fig4)
+st.header ( 'Capital Loss Distribution')
+arr5=df [' capital-loss']
+fig5, ax= plt. subplots()
+ax.hist(arr5, bins=30)
+st. pyplot (fig5)
+st. header ( 'Education Distribution')
+arr6=df [' education']
+fig6, ax= plt.subplots()
+ax.hist(arr6)
+st.pyplot (fig6)
+
+st. header (Marital Status Distribution')
+arr7=df ['marital-status']
+fig7, ax= plt.subplots()
+ax.hist(arr7)
+st.pyplot (fig7)
+st. header ('Occupation Distribution')
+arr&=df ['occupation' ]
+fig8, ax= plt. subplots ()
+ax.hist(arr8, bins= 50)
+st.pyplot(fig8)
+st.header( 'Relationship Distribution')
+arr9=df[' relationship']
+fig9, ax= plt.subplots()
+ax.hist(arrg)
+st.pyplot(fig9)
+st. header ('Race Distribution')
+arr10=df [ 'race']
+fig10, ax= plt.subplots()
+ax.hist (arr10)
+st.pyplot (fig10)
